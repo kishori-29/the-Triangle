@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Triangle </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/b7430836a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="3colored.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="indexTriangle.html">Is?Triangle</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="hypotenuse.html">Hypotenuse</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome to "The Triangle"</h1><br><br>
+            <p>△ Let's have some fun with Triangle.<br> △ Here, you can check whether entered angles can form triangle or not. <br>△ You can find hypotenuse & Area of triangle & Quiz is also available here.....</p>
+
+        </div>
+        <div class="footer">
+            <span>© Kishori Jathar</span>
+            <a href="https://github.com/kishori-29/the-Triangle" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kishori-jathar-77258a195/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+</div>
+    
+    <script>
+        var navLinks1=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks1.style.right="0";
+
+        }
+        function hideMenu(){
+            navLinks1.style.right="-250px";
+        }
+    </script>
+    
+</body>
+</html>

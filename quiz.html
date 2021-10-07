@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/b7430836a3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Triangle Quiz</title>
+</head>
+
+<!-- styling -->
+<style>
+    /* .container{
+        
+    /* margin-left:3%;
+    margin-right:3%; 
+
+    margin-top:2.9em;
+    } */
+    .container{
+      width:90%;
+    /* height:30px; */
+    color:rgb(233, 238, 228);
+    position:absolute;
+    /* text-align:center; */
+    font-weight:400;
+    font-size:13px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    }
+    .submit-ans{
+        border-radius: 4px;
+            padding:3px;
+            font-size: 80;
+            margin-left:40%;
+            margin-right:45%;
+    }
+    .submit-ans:hover{
+        background-color:rgb(217, 236, 42);
+    }
+    /* input{
+        border:none;
+    outline:none;
+    padding:0.2em 0.2em;
+    border-radius: 7px;
+    background:rgb(240, 234, 234);
+    opacity:0.7;
+    color:black;
+    font-family:inherit;
+    font-size:105%;
+    /* width:85%; 
+    margin:15px;
+    } */
+    .center-element, .output{
+        margin-left:30%;
+        margin-right:16%;
+        font-size:19px;
+        align-items:center;
+        justify-content: center;
+        
+        /* font:bolder; */
+    }
+    .output{
+        margin-left:21%;
+        margin-right:19%;
+    }
+    @media(max-width:700px){
+        .center-element, .output{
+        font-size:16px;
+        font-style: italic;
+        align-items:center;
+        justify-content: center;
+        }
+        .container{        
+        position:absolute;
+        font-weight:300;
+        font-size:12px;
+        top:51%;
+        left:50%;
+        }
+    }
+    
+</style>
+<body>
+    <div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="3colored.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="indexTriangle.html">IsTriangle</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="area.html">Area</a></li>
+                    <li><a href="hypotenuse.html">Hypotenuse</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="container">
+        <p class="center-element">Basic Quiz on Triangle △ </p><br><br>
+    <form class="quizform">
+        <!-- for first question  -->
+        <div class="questions">
+            <p>Q.1) The sum of measures total angles of triangle is always equals to _____ .</p><br>
+            <label>
+                <input type="radio" name="Q1" value="45°">45°
+            </label>
+            <label>
+                <input type="radio" name="Q1" value="90°">90°
+            </label>
+            <label>
+                <input type="radio" name="Q1" value="180°">180°
+            </label>
+        </div>
+        <br>
+        <!-- for second question -->
+        <div class="questions">
+            <p>Q.2) A ____ triangle is one where all 3 angles measure less than 90 degrees.</p><br>
+            <label>
+                <input type="radio" name="Q2" value="Obtuse">Obtuse
+            </label>
+            <label>
+                <input type="radio" name="Q2" value="Right">Right
+            </label>
+            <label>
+                <input type="radio" name="Q2" value="Acute">Acute
+            </label>
+        </div>
+        <br>
+            <!-- for third question -->
+            <div class="questions">
+                <p>Q.3) This type of Triangle has one 90 degree angle.</p><br>
+                <label>
+                    <input type="radio" name="Q3" value="Acute">Acute
+                </label>
+                <label>
+                    <input type="radio" name="Q3" value="Obtuse">Obtuse
+                </label>
+                <label>
+                    <input type="radio" name="Q3" value="Right">Right
+                </label>
+            </div>
+            
+             <!-- for 4th question -->
+             <div class="questions"><br>
+                <p>Q.4) A triangle with all sides are congruent is called:</p><br>
+                <label>
+                    <input type="radio" name="Q4" value="Scalene">Scalene
+                </label>
+                <label>
+                    <input type="radio" name="Q4" value="Equilateral">Equilateral
+                </label>
+                <label>
+                    <input type="radio" name="Q4" value="Isosceles">Isosceles
+                </label>
+            </div>
+            <br>
+             <!-- for fifth question -->
+             <div class="questions">
+                <p>Q.5) If 2 angles of triangle are 60° and 60° respectively then third angle must be</p><br>
+                <label>
+                    <input type="radio" name="Q5" value="60°">60°
+                </label>
+                <label>
+                    <input type="radio" name="Q5" value="45°">90°
+                </label>
+                <label>
+                    <input type="radio" name="Q5" value="45°">180°
+                </label>
+            </div>            
+        
+    </form><br>
+    <button class="submit-ans">Submit</button><br><br>
+    <div class="output"></div>
+    </div>
+    <div class="footer">
+        <span>© Kishori Jathar</span>
+        <a href="https://github.com/kishori-29/the-Triangle" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/kishori-jathar-77258a195/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</section>
+</div>
+<script>
+    var navLinks1=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks1.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks1.style.right="-250px";
+    }
+</script>
+
+<script src="quiz.js"></script>
+</body>
+</html>
